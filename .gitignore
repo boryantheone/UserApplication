@@ -1,5 +1,11 @@
-/cmake-build-debug/
-*.o
-.idea
+# Intellij
+.idea/
+*.iml
+*.iws
+
+# Mac
 .DS_Store
-CMakeLists.txt
+
+# Maven
+log/
+target/
