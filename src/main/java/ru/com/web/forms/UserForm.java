@@ -2,14 +2,17 @@ package ru.com.web.forms;
 
 
 import lombok.Data;
-import org.hibernate.validator.constraints.*;
+import org.hibernate.validator.constraints.Length;
+import javax.validation.constraints.NotEmpty;
 
 @Data
 public class UserForm {
-	@javax.validation.constraints.NotEmpty
+
+	@NotEmpty
 	@Length(max = 15)
 	private String firstName;
-	@javax.validation.constraints.NotEmpty
+
+	@NotEmpty
 	@Length(max = 15)
 	private String lastName;
 }

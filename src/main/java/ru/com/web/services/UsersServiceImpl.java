@@ -23,7 +23,6 @@ public class UsersServiceImpl implements UsersService {
 		User user = User.builder()
 				.firstName(form.getFirstName())
 				.lastName(form.getLastName())
-				.age(1)
 				.build();
 
 		usersRepository.save(user);
